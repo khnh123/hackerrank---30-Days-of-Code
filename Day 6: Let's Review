@@ -1,0 +1,16 @@
+N = int(input())
+list1 = []
+while N > 0:
+    a = str(input())
+    list1.append(a)
+    N = N - 1
+for i in list1:
+    a = len(i)
+    even1 = ''
+    odd1 = ''
+    for e in range(a):
+        if e%2 == 0:
+            even1 += i[e]
+        else:
+            odd1 += i[e]
+    print(even1, odd1)
