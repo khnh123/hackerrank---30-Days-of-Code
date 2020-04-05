@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+    int i_2=0;
+    double d_2=0;
+    string s_2;
+    cin >> i_2 >> d_2;
+    cin.ignore();
+    getline(cin, s_2);
+    cout << i + i_2 << endl;
+    cout << fixed << setprecision(1) << d + d_2 << endl;
+    cout << s << s_2 << endl;
+    return 0;
