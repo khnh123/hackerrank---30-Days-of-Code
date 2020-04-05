@@ -1,0 +1,13 @@
+n = int(input())
+phonebook = {}
+for i in range(n):
+    s = str(input()).split(sep=" ")
+    phonebook[s[0]] = s[1]
+search = []
+for i in range(n):
+    search.append(str(input()))
+for s in search:
+    if (phonebook.get(s, False)):
+        print(s+"="+ phonebook.get(s))
+    else:
+        print("Not found")
